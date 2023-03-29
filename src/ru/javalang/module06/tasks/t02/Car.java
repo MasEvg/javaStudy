@@ -5,4 +5,8 @@ package ru.javalang.module06.tasks.t02;
  */
 
 public class Car {
+String bodyType;
+String Transmission;
+String Engine;
+
 }

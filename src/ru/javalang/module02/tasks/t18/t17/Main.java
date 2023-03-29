@@ -1,4 +1,4 @@
-package ru.javalang.module02.tasks.t17;
+package ru.javalang.module02.tasks.t18.t17;
 
 /**
  * Пользователь вводит с клавиатуры два дробных числа.

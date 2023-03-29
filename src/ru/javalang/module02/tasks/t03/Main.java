@@ -1,5 +1,7 @@
 package ru.javalang.module02.tasks.t03;
 
+import java.util.Scanner;
+
 /**
  * Дано целое число n. Выведите следующее за ним четное число.
  * При решении этой задачи нельзя использовать условную инструкцию if и циклы.
@@ -19,6 +21,12 @@ package ru.javalang.module02.tasks.t03;
  */
 public class Main {
     public static void main(String[] args) {
-
+        // Объявление и инициализация переменной 'in'
+        Scanner in = new Scanner(System.in);
+        System.out.print("Задача 3: Дано целое число n. Выведите следующее за ним четное число..\nВведите целое число");
+        // Объявление и инициализация переменной 'x'
+        int n = in.nextInt();
+        int result = (n/2 + 1) * 2;
+        System.out.println("Количество дестяков в числе " + n + " равно " + result);
     }
 }

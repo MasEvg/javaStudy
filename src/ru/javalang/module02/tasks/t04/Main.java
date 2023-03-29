@@ -1,5 +1,7 @@
 package ru.javalang.module02.tasks.t04;
 
+import java.util.Scanner;
+
 /**
  * Стоимость покупки
  * Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить за n пирожков.
@@ -23,6 +25,19 @@ package ru.javalang.module02.tasks.t04;
  */
 public class Main {
     public static void main(String[] args) {
+        // Объявление и инициализация переменной 'in'
+        Scanner in = new Scanner(System.in);
+        System.out.print("Задача 4: Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить за n пирожков..\nВведите рублей стоит пирожек");
+        // Объявление и инициализация переменной 'a'
+        int a = in.nextInt();
+        System.out.print("Введите копеек стоит пирожек");
+        int b = in.nextInt();
+        System.out.print("Введите количество пирожков");
+        int n = in.nextInt();
+        int k = (n * b) % 100;
+        int v = (n * b) / 100;
+        int rub = a * n + v ;
+        System.out.println("стоимость покупки " + rub + " рубля (рублей) " + k + "копеек");
 
     }
 }
