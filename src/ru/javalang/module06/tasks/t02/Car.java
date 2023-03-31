@@ -9,4 +9,12 @@ String bodyType;
 String Transmission;
 String Engine;
 
+    public Car() {
+    }
+
+    public Car(String transmission) {
+        Transmission = transmission;
+    }
+
 }
+
